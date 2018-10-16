@@ -1,0 +1,14 @@
+
+var devices = require("device");
+
+var id = request.parameters.id;
+var group2 = request.parameters.group2;
+var group3 = request.parameters.group3;
+var params = {
+		  "id":id,
+		  "groups":{"append":group3, "delete":group2}
+	};
+var result = devices.save(params);
+
+return result;
+

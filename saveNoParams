@@ -1,0 +1,7 @@
+
+var devices = require("device");
+
+var result = devices.save();
+
+return result;
+

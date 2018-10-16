@@ -1,0 +1,15 @@
+
+var devices = require("device");
+
+var name = request.parameters.name;
+var login = request.parameters.login;
+var password = request.parameters.password;
+var params = {
+		 "name":name,
+		 "password": password,
+		  "login":login
+	};
+var result = devices.save(params);
+
+return result;
+

@@ -1,0 +1,18 @@
+
+var devices = require("device");
+
+var name = request.parameters.name;
+var password = request.parameters.password;
+var id = request.parameters.id;
+var group1 = request.parameters.group1;
+var group2 = request.parameters.group2;
+var params = {
+		 "name":name,
+		  "id":id,
+		  "groups":[group1, group2],
+		  "password":password
+	};
+var result = devices.save(params);
+
+return result;
+
